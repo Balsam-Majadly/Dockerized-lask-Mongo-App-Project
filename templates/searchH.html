@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search for a Poster</title>
+    <style>
+        /* Center the form horizontally */
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+            /* Increase the size of the search input */
+    input[type=text] {
+        padding: 10px;
+        font-size: 20px;
+        width: 50%;
+        max-width: 500px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 0px 5px #999;
+    }
+
+    /* Style the submit button */
+    input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* On hover, change the background color of the button */
+    input[type=submit]:hover {
+        background-color: #3e8e41;
+    }
+
+    /* Style the search title */
+    h1 {
+        text-align: center;
+        color: white;
+        font-size: 60px;
+        margin-top: 50px;
+    }
+
+    /* Style the search label */
+    label {
+        font-size: 25px;
+        color: white;
+    }
+</style>
+</head>
+<body style="background-image: url('https://www.xfire.com/wp-content/uploads/2023/01/netflix-cover-768x432.jpg.webp'); background-size: cover;">
+    <h1>Search for a Poster</h1>
+    <form action="/search" method="post">
+        <label for="query" style="margin-bottom: 10px;">Enter a movie or a series name:</label>
+        <input type="text" id="query" name="query" placeholder="movie, series">
+        <br>
+        <br>
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>
